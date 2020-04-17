@@ -12,7 +12,7 @@ const Character = (props) => {
     <Container>
         <div>
         <Card className="card">
-            <CardBody>
+            <CardBody className="cbody">
  
  {/* Characters info!!!! */}
     <CardTitle><h2>Name: <strong>{props.character.name}</strong><Spinner type="grow" color="primary" /></h2></CardTitle>
