@@ -12,12 +12,15 @@ const App = () => {
   // side effect in a component, you want to think about which state and/or props it should
   // sync up with, if any.
 
+  // Declaring my State
   const [characters, setCharacters] = useState([])
   
 
-
+// Adding my Side Effect
   useEffect(() => {
+// Axios Call
     axios.get('https://swapi.py4e.com/api/people/')
+
     .then(response => {
         console.log(response.data)
         setCharacters(response.data.results)
@@ -31,7 +34,10 @@ const App = () => {
 
   return (
     <div className="App">
+      
       <h1 className="Header">Characters</h1>
+
+      {/* Mapping through characters */}
       {characters.map(character =>(
          <Character character={character} />
       
