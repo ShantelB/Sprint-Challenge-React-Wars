@@ -1,0 +1,7 @@
+It builds large applications where you can use functions and data from other files without having to create a new function for each new file.
+
+State is an object where you store property values that belongs to a component. When state object changes, the component re-renders.
+
+A property that is used for passing data from one component to another.
+
+A side effect allows you to update information to the DOM. It is the useEffect. 
